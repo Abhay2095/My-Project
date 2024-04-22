@@ -24,7 +24,7 @@ class Test_LoginPage:
 
 
         act_title = self.driver.title
-        if act_title == "Swag Lab":
+        if act_title == "Swag Labs":
             self.logger.info("***** Successfully Login ********")
             assert True
         else:
