@@ -1,1 +1,0 @@
-print("hi hello to all")
