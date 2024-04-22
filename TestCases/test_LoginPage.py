@@ -27,7 +27,7 @@ class Test_LoginPage:
         if act_title == "Swag Labs":
             assert True
         else:
-            self.driver.save_screenshot(".\\Screenshot\\homepage.png")
+            self.driver.save_screenshot("E:\\My Project\\Screenshot\\page.png")
             assert False
 
 
