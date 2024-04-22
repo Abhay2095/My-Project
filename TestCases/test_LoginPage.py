@@ -21,13 +21,15 @@ class Test_LoginPage:
         self.lp.setusername(self.username)
         self.lp.setpassword(self.password)
         self.lp.clicklogin()
-        self.logger.info("***** Successfully Login ********")
+
 
         act_title = self.driver.title
-        if act_title == "Swag Labs":
+        if act_title == "Swag Lab":
+            self.logger.info("***** Successfully Login ********")
             assert True
         else:
             self.driver.save_screenshot("E:\\My Project\\Screenshot\\page.png")
+            self.logger.info("***** not Successfully Login ********")
             assert False
 
 
